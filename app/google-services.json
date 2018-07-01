@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "945164573264",
+    "firebase_url": "https://daily-fresh-basket.firebaseio.com",
+    "project_id": "daily-fresh-basket",
+    "storage_bucket": "daily-fresh-basket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945164573264:android:09c9fb7aaaa3e29a",
+        "android_client_info": {
+          "package_name": "org.dailyfreshbasket.com.in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945164573264-6hbc30nfdop9l19up95r4olhhvor6ki3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.dailyfreshbasket.com.in",
+            "certificate_hash": "7bc2c36247fdb203da511b05a9afc943cfeee68d"
+          }
+        },
+        {
+          "client_id": "945164573264-cud1u326lvpjm3r3b5nq7o9o3k25ccmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqx7A83H3bCA8swGmMNDJZjlydEmL1uT8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945164573264-cud1u326lvpjm3r3b5nq7o9o3k25ccmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

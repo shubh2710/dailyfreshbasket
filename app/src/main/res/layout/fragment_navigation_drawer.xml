@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmnet_navigation"
+    android:background="@color/cardview_light_background"
+    tools:context="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragment">
+
+    <LinearLayout
+        android:id="@+id/llfragmentNavigation"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="280dp"
+            android:clickable="true"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="200dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_009_commerce_1"
+                />
+        </LinearLayout>
+
+    <TextView
+        android:text="Home Shopping Menu"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:layout_weight="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/rcfragmentNavigationList"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</RelativeLayout>

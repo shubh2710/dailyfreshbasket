@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_light_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/iv_row_detail_po_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_002_cart" />
+    <LinearLayout
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:layout_toEndOf="@+id/iv_row_detail_po_image"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_row_detail_po_productname"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:text="nameofpro" />
+
+        <TextView
+            android:id="@+id/tv_row_detail_po_productquantity"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="2" />
+        <TextView
+            android:id="@+id/tvVi3"
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x" />
+        <TextView
+            android:id="@+id/tv_row_detail_po_amount"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123" />
+
+        <TextView
+            android:id="@+id/tvpo_tew13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Rs" />
+    </LinearLayout>
+
+
+</RelativeLayout>

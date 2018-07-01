@@ -1,0 +1,118 @@
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="5dp"
+    android:layout_marginBottom="5dp">
+
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/iv_product_image_in_wishlist_layout"
+            android:src="@color/buttonColor"
+            android:layout_height="150dp" />
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="1dp"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:id="@+id/tv_product_in_wishlist_name"
+                android:text="name of product"
+                android:layout_height="wrap_content" />
+                <ImageButton
+                    android:layout_width="1dp"
+                    android:background="@color/cardview_light_background"
+                    android:layout_weight="0.5"
+                    android:layout_height="30dp"
+                    android:id="@+id/b_cartView_removeProduct"
+                    app:srcCompat="@drawable/ic_delete_black_24px"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="sub detail of product"
+                android:id="@+id/tv_product_in_wishlist_subname"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/ic_015_money_1"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/tv_product_in_wishlist_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/ic_verfied"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="quantity:"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#f00"
+                    android:id="@+id/et_product_in_wishlist_quentity"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="out of stock"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_product_in_wishlist_shopname"
+                android:text="Shop Detail"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_product_in_wishlist_sub_shop_name"
+                android:text="kalle ki dukan"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/b_product_in_wishlist_addtocart"
+                android:layout_width="match_parent"
+                android:textColor="#fff"
+                android:layout_height="30dp"
+                android:background="@drawable/mybutton"
+                android:text="Move To Cart"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

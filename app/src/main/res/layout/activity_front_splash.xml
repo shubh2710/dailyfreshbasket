@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="org.dailyfreshbasket.com.in.activities.FrontSplashActivity">
+    <FrameLayout
+        android:id="@+id/ll_frontpage"
+        android:layout_width="match_parent"
+        android:background="@drawable/back"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ProgressBar
+
+            android:id="@+id/pb_frontSplashPage"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pb_frontSplashPage"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="34dp"
+            android:text="Checking net conectivity"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

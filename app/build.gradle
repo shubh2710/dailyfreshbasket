@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'shubham_alias'
+            keyPassword 'dailyfreshbasket@123'
+            storeFile file('F:/DRIVE_A/keypath/dailyfreshbasket_key.jks')
+            storePassword 'dailyfreshbasket@123'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        applicationId "org.dailyfreshbasket.com.in"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptSupportModeEnabled true
+    }
+    ext {
+        supportLibVersion = '25.0.0'
+        // variable that can be referenced to keep support libs consistent
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true
+        }
+    }
+    productFlavors {
+    }
+}
+dependencies {
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'it.neokree:MaterialTabs:0.11'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'junit:junit:4.12'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'jp.wasabeef:blurry:2.1.1'
+    implementation 'com.github.juanlabrador:badgecounter:1.0.2@aar'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'net.gotev:uploadservice:3.0'
+}
+apply plugin: 'com.google.gms.google-services'

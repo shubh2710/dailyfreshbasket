@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            >
+            <include
+                android:id="@+id/appbar"
+                layout="@layout/app_bar"/>
+
+            <it.neokree.materialtabs.MaterialTabHost
+                android:id="@+id/materialTabHost"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:textColor="#FFFFFF"
+                app:iconColor="#FFFFFF"
+                app:primaryColor="@color/colorPrimary"
+                app:accentColor="@color/cardview_light_background"
+                />
+
+        </android.support.design.widget.AppBarLayout>
+        </android.support.design.widget.CoordinatorLayout>
+        <RelativeLayout
+            android:layout_below="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <org.dailyfreshbasket.com.in.adapters.CustomViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/fui_ic_phone_white_24dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="280dp"
+        android:id="@+id/fragment_navigation_drawer"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        class="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragment"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+    <fragment
+        android:layout_width="280dp"
+        android:id="@+id/fragment_navigation_drawerRight"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        class="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragmentRight"
+        app:layout="@layout/fragment_navigation_drawer_right"
+        tools:layout="@layout/fragment_navigation_drawer_right" />
+
+</android.support.v4.widget.DrawerLayout>

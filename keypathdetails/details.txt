@@ -1,0 +1,3 @@
+F:\DRIVE_A\keypath\dailyfreshbasket_key.jks
+alise=shubham_alias
+password =dailyfreshbasker@123

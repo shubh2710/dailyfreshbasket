@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorwhite"
+    android:paddingBottom="10dp"
+    tools:context="org.dailyfreshbasket.com.in.fragments.UserDetailMyProfile">
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/appbarLayout"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/rc_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:tint="#ffff"
+        app:srcCompat="@drawable/ic_add" />
+</RelativeLayout>
+

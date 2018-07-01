@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            cardCornerRadius="@dimen/cardview_compat_inset_shadow"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:weightSum="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Address 1: "
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:layout_weight="7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_address" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:hint="name"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_name" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:hint="Mobile no"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_mobile" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:hint="Address Line 1"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_line1" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:hint="Landmark"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_land" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:hint="State"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_pin" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:hint="City"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_city" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:hint="State"
+                        android:padding="5dp"
+                        android:soundEffectsEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_state" />
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:padding="10dp"
+                                android:id="@+id/iv_address_del"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"
+                                app:srcCompat="@drawable/ic_delete_black_24px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

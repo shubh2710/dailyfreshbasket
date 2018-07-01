@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/activity_sort"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/cardview_light_background"
+        tools:context="org.dailyfreshbasket.com.in.activities.SortActivity">
+        <RadioGroup
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            >
+            <RadioButton
+                android:padding="10dp"
+                android:buttonTint="#000"
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:text="Price High To Low"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                />
+
+
+            <RadioButton
+                android:padding="10dp"
+                android:buttonTint="#000"
+                android:id="@+id/radio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price Low To High"
+                android:textColor="#000"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:buttonTint="#000"
+                android:id="@+id/radio5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Product Rate High To Low"
+                android:checked="false"
+                />
+
+
+            <RadioButton
+                android:padding="10dp"
+                android:buttonTint="#000"
+                android:id="@+id/radio6"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:text="Product New To Old"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

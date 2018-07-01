@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <include
+                android:id="@+id/appbar"
+                layout="@layout/app_bar"/>
+
+        <it.neokree.materialtabs.MaterialTabHost
+            android:id="@+id/materialTabHostSignOrLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:textColor="#FFFFFF"
+            app:iconColor="#FFFFFF"
+            app:primaryColor="@color/colorPrimary"
+            app:accentColor="@color/colorAccent"
+            app:hasIcons="false"/>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagerSignOrLogin"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+

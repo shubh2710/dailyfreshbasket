@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <android.support.v7.widget.CardView
+               app:contentPadding="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               app:cardCornerRadius="1dp">
+               <LinearLayout
+                   android:layout_width="180dp"
+                   android:layout_height="wrap_content"
+                   android:background="@color/cardview_light_background"
+                   android:orientation="vertical">
+                   <FrameLayout
+                       android:layout_gravity="center"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:id="@+id/ivslider_product_image"
+                           android:layout_width="108dp"
+                           android:layout_height="130dp"
+                           android:layout_gravity="center" />
+                       <LinearLayout
+                           android:id="@+id/layout_distcount"
+                           android:layout_gravity="right|top"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <ImageView
+                                   android:id="@+id/imageView4"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_weight="1"
+                                   app:srcCompat="@drawable/ic_maps_and_flags" />
+                               <TextView
+                                   android:padding="8dp"
+                                   android:gravity="top|center"
+                                   android:id="@+id/tvslider_product_Discount"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:textSize="11sp"
+                                   android:layout_gravity="center"
+                                   android:text="30%"
+                                   android:textColor="#fff"
+                                   android:textStyle="bold" />
+                           </FrameLayout>
+
+                       </LinearLayout>
+
+                   </FrameLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:id="@+id/tvslider_product_name"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="2dp"
+                           android:textAlignment="center"
+                           android:text="name of product" />
+
+                       <ImageView
+                           android:visibility="gone"
+                           android:id="@+id/imageView3"
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_marginLeft="5dp"
+                           android:layout_weight="1"
+                           app:srcCompat="@drawable/ic_verfied" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:id="@+id/tvslider_product_rate"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:textStyle="bold"
+                           android:text="234 Rs"
+                           android:textColor="@color/colorPrimary" />
+
+                       <TextView
+                           android:id="@+id/tvslider_product_mrp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:gravity="center"
+                           android:text="234 Rs" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:id="@+id/home_product_avaiable"
+                       android:layout_width="match_parent"
+                       android:textAlignment="center"
+                       android:layout_height="wrap_content"
+                       android:text="avilable" />
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:gravity="center"
+                       android:padding="5dp"
+                       android:layout_marginBottom="10dp"
+                       android:weightSum="4">
+
+                       <Button
+                           android:id="@+id/b_home_product_buynow"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_margin="2dp"
+                           android:layout_weight="1"
+                           android:visibility="gone"
+                           android:background="@drawable/mybutton"
+                           android:text="Buy Now"
+                           android:textColor="#fff" />
+
+                       <LinearLayout
+                           android:id="@+id/ll_quanitytLayout"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="2dp"
+                           android:weightSum="1"
+                           android:background="@drawable/mybutton"
+                           android:visibility="gone">
+
+                           <Button
+                               android:id="@+id/b_home_product_minus"
+                               android:layout_width="30dp"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:layout_margin="2dp"
+                               android:background="@drawable/mybutton"
+                               android:text="-"
+                               android:textColor="#fff" />
+
+                           <TextView
+                               android:id="@+id/tv_home_product_quanitiy"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:padding="5dp"
+                               android:text="1"
+                               android:textAlignment="center"
+                               android:textColor="#fff" />
+
+                           <Button
+                               android:id="@+id/b_home_product_plus"
+                               android:layout_width="30dp"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:layout_margin="2dp"
+                               android:background="@drawable/mybutton"
+                               android:text="+"
+                               android:textColor="#fff" />
+                       </LinearLayout>
+
+                       <Button
+                           android:id="@+id/b_home_product_addTocart"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_margin="2dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/mybutton"
+                           android:text="Add"
+                           android:textColor="#fff"
+                           android:visibility="visible" />
+                   </LinearLayout>
+               </LinearLayout>
+           </android.support.v7.widget.CardView>
+       </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/productViewStock"
+        android:visibility="gone"
+        android:background="#afff"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textColor="#F00"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:text="Out Of Stock"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="org.dailyfreshbasket.com.in.activities.OrderDetailActivity" >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbarLayout"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/app_bar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:id="@+id/order_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_deatils_p_status"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Status" />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/tv_details_p_placedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_deatils_p_status"
+            android:layout_centerHorizontal="true"
+            android:text="date" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:contentPadding="10dp"
+            android:id="@+id/cv_details"
+            android:layout_margin="1dp"
+            android:elevation="2dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/order_status">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="14dp"
+                    android:text="Details"
+                    android:id="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_orderNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView24"
+                    android:layout_below="@+id/textView24"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_orderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_details_p_orderNo"
+                    android:layout_below="@+id/tv_details_p_orderNo"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_dDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_details_p_orderID"
+                    android:layout_below="@+id/tv_details_p_orderID"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_details_p_dDate"
+                    android:layout_below="@+id/tv_details_p_dDate"
+                    android:text="Total amount to pay:" />
+
+                <TextView
+                    android:id="@+id/tv_detail_p_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/textView28"
+                    android:layout_alignBottom="@+id/textView28"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_detail_p_amount"
+                    android:layout_alignBottom="@+id/tv_detail_p_amount"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:text="Rs" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:contentPadding="10dp"
+            android:layout_margin="1dp"
+            android:elevation="2dp"
+            android:id="@+id/cv_cvdelivey"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv_details">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="14dp"
+                    android:text="Delivary"
+                    android:id="@+id/textView222" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView222"
+                    android:layout_below="@+id/textView222"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_details_p_name"
+                    android:layout_below="@+id/tv_details_p_name"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_details_p_street"
+                    android:layout_below="@+id/tv_details_p_street"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_details_p_land"
+                    android:layout_below="@+id/tv_details_p_land"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_details_p_city"
+                    android:layout_alignBottom="@+id/tv_details_p_city"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/tv_details_p_city"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_details_p_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_details_p_city"
+                    android:layout_below="@+id/tv_details_p_city"
+                    android:text="" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cv_cvdelivey"
+            android:layout_width="match_parent"
+            android:layout_margin="1dp"
+            app:contentPadding="5dp"
+            app:cardElevation="2dp"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_orderList_details"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>

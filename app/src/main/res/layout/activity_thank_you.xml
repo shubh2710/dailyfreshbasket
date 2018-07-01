@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context="org.dailyfreshbasket.com.in.activities.ThankYouActivity">
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Confirmation" />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:background="#bfffd8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+<android.support.v7.widget.CardView
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="80dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:tint="@color/colorPrimary"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/fui_done_check_mark" />
+</android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_confirmation_order_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Order id"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_confirmation_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Order id"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="You can cancal order any time before dispatch" />
+
+    <Button
+        android:id="@+id/b_confirmation_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Shop More" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Read Return Policy" />
+</RelativeLayout>

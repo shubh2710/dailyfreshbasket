@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmnet_navigation_right"
+    android:background="@color/cardview_light_background"
+    tools:context="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragment">
+
+    <FrameLayout
+        android:clickable="true"
+        android:id="@+id/llfragmentNavigation_right"
+        android:layout_width="match_parent"
+        android:background="@color/colorwhite"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_profile_backImage"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_rightdrwaerCurrentProfilePic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            app:civ_border_color="#FF000000"/>
+        <Button
+            android:id="@+id/b_DirectLoginButton"
+            android:layout_gravity="right"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:background="@drawable/mybutton"
+            android:text="Login"/>
+        <TextView
+            android:text="guset account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="120dp"
+            android:id="@+id/tvCurrentUserName" />
+        <TextView
+            android:text="guest@email.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginTop="150dp"
+            android:id="@+id/tvLoginCurrentemail" />
+
+    </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/llfragmentNavigation_right">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/NavigationRightList">
+    </ListView>
+</LinearLayout>
+</RelativeLayout>
