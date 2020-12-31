@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.dailyfreshbasket.com.in.activities.ActivityContactUs">
+    tools:context="org.dailyfreshbasket.co.in.activities.ActivityContactUs">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -38,7 +40,7 @@
         android:layout_below="@+id/textView7"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="Change Devivery" />
+        android:text="Change Delivery" />
 
     <Button
         android:id="@+id/b_contact_return"

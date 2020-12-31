@@ -8,6 +8,50 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:945164573264:android:9fe228ff707da732",
+        "android_client_info": {
+          "package_name": "org.dailyfreshbasket.co.in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945164573264-9ttthvshn3075rkv30af3q7juvhgpcvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.dailyfreshbasket.co.in",
+            "certificate_hash": "e743289cdcf2d3ad6215a75f8729ed0046644700"
+          }
+        },
+        {
+          "client_id": "945164573264-cud1u326lvpjm3r3b5nq7o9o3k25ccmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqx7A83H3bCA8swGmMNDJZjlydEmL1uT8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945164573264-cud1u326lvpjm3r3b5nq7o9o3k25ccmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:945164573264:android:09c9fb7aaaa3e29a",
         "android_client_info": {
           "package_name": "org.dailyfreshbasket.com.in"
@@ -15,7 +59,23 @@
       },
       "oauth_client": [
         {
-          "client_id": "945164573264-6hbc30nfdop9l19up95r4olhhvor6ki3.apps.googleusercontent.com",
+          "client_id": "945164573264-3vhtrfnpag3gqgrppthlol5s9kshj7m0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.dailyfreshbasket.com.in",
+            "certificate_hash": "17e1647b52004dd548680b94bcc5ea9d741b2624"
+          }
+        },
+        {
+          "client_id": "945164573264-hqin9a80neit4ugetnhl0hmuei2ts2s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.dailyfreshbasket.com.in",
+            "certificate_hash": "0ead792d301176a9b6f45dab4556ecb1b4c59839"
+          }
+        },
+        {
+          "client_id": "945164573264-iq3sr9gs9nalp3arn8lvsq5kbrjgb7ov.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "org.dailyfreshbasket.com.in",

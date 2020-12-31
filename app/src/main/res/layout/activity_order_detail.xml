@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="org.dailyfreshbasket.com.in.activities.OrderDetailActivity" >
+    tools:context="org.dailyfreshbasket.co.in.activities.OrderDetailActivity" >
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
         android:id="@+id/appbarLayout"
         android:layout_height="wrap_content">
         <include
@@ -98,14 +100,31 @@
                     android:layout_alignStart="@+id/tv_details_p_orderID"
                     android:layout_below="@+id/tv_details_p_orderID"
                     android:text="" />
-
+                <TextView
+                    android:id="@+id/tv_order_detail_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_details_p_dDate"
+                    android:layout_alignStart="@+id/tv_details_p_dDate"
+                    android:layout_below="@+id/tv_details_p_dDate"
+                    android:text="Delivery Charge" />
                 <TextView
                     android:id="@+id/textView28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@+id/tv_details_p_dDate"
-                    android:layout_below="@+id/tv_details_p_dDate"
+                    android:layout_below="@+id/tv_order_detail_charge"
                     android:text="Total amount to pay:" />
+
+
+                <TextView
+                    android:id="@+id/tv_order_detail_chargers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_detail_p_amount"
+                    android:layout_alignLeft="@+id/tv_detail_p_amount"
+                    android:layout_alignStart="@+id/tv_detail_p_amount"
+                    android:text="" />
 
                 <TextView
                     android:id="@+id/tv_detail_p_amount"
@@ -118,15 +137,7 @@
                     android:layout_marginEnd="40dp"
                     android:text="" />
 
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/tv_detail_p_amount"
-                    android:layout_alignBottom="@+id/tv_detail_p_amount"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="16dp"
-                    android:text="Rs" />
+
 
             </RelativeLayout>
 

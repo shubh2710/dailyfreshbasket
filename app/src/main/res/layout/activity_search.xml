@@ -5,10 +5,12 @@
     android:id="@+id/activity_search"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.dailyfreshbasket.com.in.activities.SearchActivity">
+    tools:context="org.dailyfreshbasket.co.in.activities.SearchActivity">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
         android:id="@+id/applayout"
         android:background="@android:color/transparent">
         <include

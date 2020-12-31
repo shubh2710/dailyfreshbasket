@@ -8,7 +8,7 @@
     app:cardElevation="5dp"
     app:cardCornerRadius="10dp"
 
-    tools:context="org.dailyfreshbasket.com.in.activities.ActivityFilters">
+    tools:context="org.dailyfreshbasket.co.in.activities.ActivityFilters">
 
     <LinearLayout
         android:layout_width="match_parent"

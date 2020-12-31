@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragmnet_navigation"
     android:background="@color/cardview_light_background"
-    tools:context="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragment">
+    tools:context="org.dailyfreshbasket.co.in.fragments.NavigationDrawerFragment">
 
     <LinearLayout
         android:id="@+id/llfragmentNavigation"
@@ -29,10 +29,8 @@
 
     <TextView
         android:text="Home Shopping Menu"
-        android:padding="5dp"
         android:textSize="15dp"
-        android:layout_weight="0.6"
-        android:layout_width="wrap_content"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView6" />
         <android.support.v7.widget.RecyclerView

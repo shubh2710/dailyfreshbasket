@@ -2,10 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/AppTheme.AppBarOverlay"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragmnet_navigation_right"
     android:background="@color/cardview_light_background"
-    tools:context="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragment">
+    tools:context="org.dailyfreshbasket.co.in.fragments.NavigationDrawerFragment">
 
     <FrameLayout
         android:clickable="true"

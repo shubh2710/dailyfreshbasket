@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#34c24d</color>
-    <color name="colorPrimaryDark">#34b24d</color>
-    <color name="colorAccent">#5fa7ef</color>
+    <!--<color name="colorPrimary">#34c24d</color>-->
+    <!--<color name="colorPrimaryDark">#34b24d</color>-->
+    <!--<color name="colorAccent">#5fa7ef</color>-->
+
+
+    <color name="colorPrimary">#df3436</color>
+    <color name="colorPrimaryDark">#ce2c2d</color>
+    <color name="colorAccent">#3eda3c</color>
+
     <color name="colorHighLight">#6b6b</color>
     <color name="colorwhite">#eeee</color>
     <color name="buttonColor">#eeee</color>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorwhite"
-    tools:context="org.dailyfreshbasket.com.in.fragments.UserDetailMyProfile">
+    tools:context="org.dailyfreshbasket.co.in.fragments.UserDetailMyProfile">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

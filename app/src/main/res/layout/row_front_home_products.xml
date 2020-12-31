@@ -2,6 +2,8 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="3dp"
+    android:background="#fff"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <LinearLayout
@@ -10,17 +12,34 @@
        <FrameLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent">
+
+           <!--app:contentPadding="5dp"-->
+           <!--android:layout_margin="5dp"-->
            <android.support.v7.widget.CardView
-               app:contentPadding="5dp"
                android:layout_width="match_parent"
                android:layout_height="match_parent"
-               android:layout_margin="5dp"
+                android:layout_margin="5dp"
                app:cardCornerRadius="1dp">
                <LinearLayout
                    android:layout_width="180dp"
                    android:layout_height="wrap_content"
                    android:background="@color/cardview_light_background"
                    android:orientation="vertical">
+                   <TextView
+                       android:transformPivotX="100dp"
+                       android:transformPivotY="100dp"
+                       android:background="#44dcb3"
+                       android:rotation="40"
+                       android:elevation="3dp"
+                       android:gravity="center"
+                       android:id="@+id/tvslider_product_Discount"
+                       android:layout_width="match_parent"
+                       android:layout_height="20dp"
+                       android:textSize="13sp"
+                       android:layout_gravity="right"
+                       android:text="30%"
+                       android:textColor="#fff"
+                       android:textStyle="bold" />
                    <FrameLayout
                        android:layout_gravity="center"
                        android:layout_width="match_parent"
@@ -40,22 +59,25 @@
                                android:layout_height="match_parent">
 
                                <ImageView
+android:visibility="gone"
                                    android:id="@+id/imageView4"
-                                   android:layout_width="50dp"
+                                   android:layout_width="40dp"
                                    android:layout_height="50dp"
                                    android:layout_weight="1"
-                                   app:srcCompat="@drawable/ic_maps_and_flags" />
-                               <TextView
-                                   android:padding="8dp"
-                                   android:gravity="top|center"
-                                   android:id="@+id/tvslider_product_Discount"
-                                   android:layout_width="match_parent"
-                                   android:layout_height="match_parent"
-                                   android:textSize="11sp"
-                                   android:layout_gravity="center"
-                                   android:text="30%"
-                                   android:textColor="#fff"
-                                   android:textStyle="bold" />
+                                   app:srcCompat="@drawable/discount_new_tag_type" />
+                               <!--<TextView-->
+                                   <!--android:visibility="gone"-->
+                                   <!--android:background="@color/colorPrimary"-->
+                                   <!--android:rotation="45"-->
+                                   <!--android:gravity="top|center"-->
+                                   <!--android:id="@+id/tvslider_product_Discount"-->
+                                   <!--android:layout_width="100dp"-->
+                                   <!--android:layout_height="30dp"-->
+                                   <!--android:textSize="13sp"-->
+                                   <!--android:layout_gravity="center"-->
+                                   <!--android:text="30%"-->
+                                   <!--android:textColor="#fff"-->
+                                   <!--android:textStyle="bold" />-->
                            </FrameLayout>
 
                        </LinearLayout>
@@ -71,6 +93,8 @@
                            android:layout_width="match_parent"
                            android:layout_height="wrap_content"
                            android:padding="2dp"
+                           android:fontFamily="sans-serif-condensed"
+                           android:singleLine="true"
                            android:textAlignment="center"
                            android:text="name of product" />
 

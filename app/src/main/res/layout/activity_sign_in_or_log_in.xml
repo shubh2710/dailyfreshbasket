@@ -18,6 +18,8 @@
             android:layout_width="match_parent"
             android:id="@+id/appbarLayout2"
             android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+
             >
             <include
                 android:id="@+id/appbar"
@@ -28,7 +30,7 @@
             android:layout_below="@+id/appbarLayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            class="org.dailyfreshbasket.com.in.fragments.BlankFragmentForUse"
+            class="org.dailyfreshbasket.co.in.fragments.BlankFragmentForUse"
             android:id="@+id/UserDetailsesFragrmentSwitcher"
             tools:layout="@layout/fragment_blank_fragment_for_use" />
         </RelativeLayout>
@@ -38,7 +40,7 @@
         android:id="@+id/fragment_navigation_drawer_forUserDatail"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:name="org.dailyfreshbasket.com.in.fragments.NavigationDrawerForUserDetail"
+        android:name="org.dailyfreshbasket.co.in.fragments.NavigationDrawerForUserDetail"
         app:layout="@layout/fragment_navigation_drawer_for_user_detail"
         tools:layout="@layout/fragment_navigation_drawer_for_user_detail" />
 </android.support.v4.widget.DrawerLayout>

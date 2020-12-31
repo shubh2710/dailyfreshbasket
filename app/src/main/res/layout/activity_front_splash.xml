@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="org.dailyfreshbasket.com.in.activities.FrontSplashActivity">
+    tools:context="org.dailyfreshbasket.co.in.activities.FrontSplashActivity">
     <FrameLayout
         android:id="@+id/ll_frontpage"
         android:layout_width="match_parent"

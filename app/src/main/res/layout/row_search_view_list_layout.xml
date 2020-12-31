@@ -16,6 +16,24 @@
             android:layout_marginBottom="5dp"
             android:layout_height="wrap_content"
             card_view:cardElevation="5dp">
+            <TextView
+                android:elevation="3dp"
+                android:layout_gravity="left"
+                android:transformPivotY="60dp"
+                android:transformPivotX="60dp"
+                android:rotation="315"
+android:singleLine="true"
+                android:layout_width="110dp"
+                android:textSize="13dp"
+                android:textStyle="bold"
+android:gravity="center"
+                android:textColor="#fff"
+                android:background="#00ba98"
+                android:id="@+id/tv_product_in_search_discount"
+                android:text="%"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_height="wrap_content" />
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -58,6 +76,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <ImageView
+                            android:visibility="gone"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:background="@drawable/ic_015_money_1"
@@ -84,8 +103,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:rating="3"
+                        android:visibility="gone"
                         android:id="@+id/ratingBar"
                         style="@style/Widget.AppCompat.RatingBar.Small" />
+                    <TextView
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/offer_tv"
+                        android:text="Offer"
+                        android:textColor="#F00"
+                        />
                     <TextView
                         android:layout_margin="5dp"
                         android:id="@+id/search_product_aviable"
@@ -158,6 +187,7 @@
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -168,19 +198,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ImageView
+                android:visibility="gone"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                app:srcCompat="@drawable/ic_maps_and_flags"/>
-            <TextView
-                android:layout_marginBottom="6dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:textColor="#fff"
-                android:id="@+id/tv_product_in_search_discount"
-                android:text="6%"
-                android:layout_height="wrap_content" />
+                app:srcCompat="@drawable/price_tag_icon"/>
+            <!--<TextView-->
+                <!--android:rotation="45"-->
+                <!--android:layout_marginBottom="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:textSize="13dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="#fff"-->
+                <!--android:id="@+id/tv_product_in_search_discount"-->
+                <!--android:text="6%"-->
+                <!--android:paddingLeft="2dp"-->
+                <!--android:layout_height="wrap_content" />-->
         </FrameLayout>
     </LinearLayout>
     <LinearLayout

@@ -4,20 +4,26 @@
     android:layout_width="280dp"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="org.dailyfreshbasket.com.in.fragments.NavigationDrawerForUserDetail">
+    tools:context="org.dailyfreshbasket.co.in.fragments.NavigationDrawerForUserDetail">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
-    android:layout_height="100dp">
 
     <ImageView
+        android:background="@color/colorPrimary"
         android:layout_gravity="right"
         android:id="@+id/imageView10"
         android:layout_width="match_parent"
+
         android:layout_height="80dp"
+        android:padding="10dp"
         app:srcCompat="@drawable/ic_009_commerce_1" />
-</LinearLayout>
+    <TextView
+        android:background="#fff"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home Shopping Menu"/>
     <ListView
         android:background="@color/cardview_light_background"
         android:layout_width="match_parent"
@@ -25,5 +31,6 @@
         android:id="@+id/listViewUserDatailDrawer"
         android:divider="#0000">
     </ListView>
+
 
 </LinearLayout>

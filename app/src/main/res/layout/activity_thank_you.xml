@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffff"
-    tools:context="org.dailyfreshbasket.com.in.activities.ThankYouActivity">
+    tools:context="org.dailyfreshbasket.co.in.activities.ThankYouActivity">
     <TextView
         android:textSize="20dp"
         android:id="@+id/textView4"

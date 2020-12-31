@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/cardview_light_background"
-        tools:context="org.dailyfreshbasket.com.in.activities.SortActivity">
+        tools:context="org.dailyfreshbasket.co.in.activities.SortActivity">
         <RadioGroup
             android:layout_gravity="center"
             android:layout_width="match_parent"

@@ -15,6 +15,7 @@
             android:layout_height="wrap_content">
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay"
 
             android:layout_height="wrap_content"
             >
@@ -40,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
-            <org.dailyfreshbasket.com.in.adapters.CustomViewPager
+            <org.dailyfreshbasket.co.in.adapters.CustomViewPager
                 android:id="@+id/pager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -64,15 +65,16 @@
         android:id="@+id/fragment_navigation_drawer"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        class="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragment"
+        class="org.dailyfreshbasket.co.in.fragments.NavigationDrawerFragment"
         app:layout="@layout/fragment_navigation_drawer"
         tools:layout="@layout/fragment_navigation_drawer" />
     <fragment
+
         android:layout_width="280dp"
         android:id="@+id/fragment_navigation_drawerRight"
         android:layout_height="match_parent"
         android:layout_gravity="right"
-        class="org.dailyfreshbasket.com.in.fragments.NavigationDrawerFragmentRight"
+        class="org.dailyfreshbasket.co.in.fragments.NavigationDrawerFragmentRight"
         app:layout="@layout/fragment_navigation_drawer_right"
         tools:layout="@layout/fragment_navigation_drawer_right" />
 

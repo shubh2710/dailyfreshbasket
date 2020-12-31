@@ -5,10 +5,12 @@
     android:id="@+id/activity_my_cart"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.dailyfreshbasket.com.in.activities.ActivityMyCart">
+    tools:context="org.dailyfreshbasket.co.in.activities.ActivityMyCart">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -117,7 +119,7 @@
                 android:id="@+id/tv_discount"
                 android:layout_below="@+id/tv_productIncart_tax"
                 android:layout_width="wrap_content"
-                android:text="Discount"
+                android:text="With Discount of"
                 android:layout_height="wrap_content" />
 
             <TextView
@@ -148,6 +150,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:visibility="gone"
                 android:layout_margin="2dp"
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"

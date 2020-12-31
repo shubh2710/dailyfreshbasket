@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.dailyfreshbasket.com.in">
+    package="org.dailyfreshbasket.co.in">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -10,59 +10,60 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-
+<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
     <application
-        android:name="org.dailyfreshbasket.com.in.MyApplication"
+        android:name="org.dailyfreshbasket.co.in.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.dailyfreshbasket.com.in.activities.Home" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ShowCase" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.signInOrLogIn" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.SignInOrLoginTabs" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ActivityMyCart" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ActivityMyWishList" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.SearchActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ShopsListActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.testActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.SimpleScannerActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ActivitySearchBox" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ActivityFilters" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.Home" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ShowCase" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.signInOrLogIn" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.SignInOrLoginTabs" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ActivityMyCart" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ActivityMyWishList" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.SearchActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ShopsListActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.testActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.SimpleScannerActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ActivitySearchBox" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ActivityFilters" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name="org.dailyfreshbasket.com.in.activities.SortActivity"
+            android:name="org.dailyfreshbasket.co.in.activities.SortActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ActivityShopesShowcase" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.FrontSplashActivity">
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ActivityShopesShowcase" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.FrontSplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ShopShowCaseActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.PlaceNowActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ConfirmOrderActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ThankYouActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ActivityOrderList" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.CancelOrderActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.AddAddressActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.OrderDetailActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ActivityContactUs" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ShopShowCaseActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.PlaceNowActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ConfirmOrderActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ThankYouActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ActivityOrderList" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.CancelOrderActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.AddAddressActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.OrderDetailActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ActivityContactUs" />
         <activity
-            android:name="org.dailyfreshbasket.com.in.activities.SettingsActivity"
+            android:name="org.dailyfreshbasket.co.in.activities.SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ShereThisAppActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ProblemActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.SelectAddressActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.ForgetPasswordActivity" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.AddLandmarkRequest" />
-        <activity android:name="org.dailyfreshbasket.com.in.activities.OTPActivity"></activity>
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ShereThisAppActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ProblemActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.SelectAddressActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.ForgetPasswordActivity" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.AddLandmarkRequest" />
+        <activity android:name="org.dailyfreshbasket.co.in.activities.OTPActivity"></activity>
     </application>
 
 </manifest>

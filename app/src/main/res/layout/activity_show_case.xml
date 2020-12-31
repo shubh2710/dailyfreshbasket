@@ -7,13 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="org.dailyfreshbasket.com.in.activities.ShowCase">
-
+    tools:context="org.dailyfreshbasket.co.in.activities.ShowCase">
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:id="@+id/appbarLayout"
+        android:layout_height="wrap_content">
     <include
         android:id="@+id/appbar"
         layout="@layout/app_bar" />
+    </android.support.design.widget.AppBarLayout>
 <RelativeLayout
-    android:layout_below="@+id/appbar"
+    android:layout_below="@+id/appbarLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <android.support.v4.widget.NestedScrollView
@@ -77,18 +82,17 @@
             android:textStyle="bold" />
 
         <TextView
+            android:padding="5dp"
+            android:id="@+id/tv_specs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
             android:id="@+id/tv_productSubName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:textSize="15dp"
             android:text="Sub details" />
-        <TextView
-            android:id="@+id/tv_Quatity"
-            android:padding="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="In Stock 1" />
 <RelativeLayout
     android:orientation="horizontal"
     android:weightSum="3"
@@ -101,7 +105,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:numStars="5"
+        android:visibility="gone"
         android:stepSize="1.0" />
+    <TextView
+        android:id="@+id/tv_Quatity"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Stock 1" />
+
     <ImageView
         android:id="@+id/iv_showcase_wish"
         android:layout_width="wrap_content"
@@ -124,19 +136,23 @@
                 app:contentPadding="5dp"
                 android:layout_margin="1dp"
                 android:layout_height="wrap_content">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
+                        android:visibility="invisible"
                         android:id="@+id/imageView11"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignBottom="@+id/tv_productPrice"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Rs"
+                        android:textSize="20dp"
                         android:tint="#f00"
                         app:srcCompat="@drawable/ic_015_money_1" />
 
@@ -151,18 +167,29 @@
                         android:textSize="25dp" />
 
                     <TextView
+
                         android:id="@+id/tv_productDiscount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignBaseline="@+id/tv_productPrice"
-                        android:layout_alignBottom="@+id/tv_productPrice"
-                        android:layout_marginStart="11dp"
-                        android:layout_toEndOf="@+id/tv_productPrice"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_productMrp"
                         android:padding="5dp"
                         android:text="10%"
                         android:textColor="@color/colorPrimary" />
 
+                    <TextView
+                        android:id="@+id/tv_productMrp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_productPrice"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_productPrice"
+                        android:padding="5dp"
+                        android:text="10" />
+
                     <ImageView
+                        android:visibility="gone"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_alignTop="@+id/tv_productDiscount"
@@ -182,7 +209,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="9dp"
-                    android:background="#f19090"
+                    android:background="#e7e286"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -212,7 +239,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="9dp"
-                    android:background="#f19090"
+                    android:background="#e7e286"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -226,7 +253,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Fast Delivery with no charges in city"
+                        android:text="Quick order and Fast Delivery"
                         android:textSize="15dp" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>

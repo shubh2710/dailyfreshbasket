@@ -12,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
+
             android:layout_width="150dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="2dp"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
             android:id="@+id/iv_product_image_in_cart_layout"
@@ -48,6 +49,7 @@
                     />
             </LinearLayout>
             <TextView
+                android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:text="sub detail of product"
                 android:id="@+id/tv_product_in_cart_subname"
@@ -57,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:visibility="gone"
                     android:layout_gravity="center"
                     android:layout_width="10dp"
                     android:layout_height="10dp"

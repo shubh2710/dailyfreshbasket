@@ -91,6 +91,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_state" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:padding="10dp"
+                        android:textSize="17dp"
+                        android:text="Select"
+                        android:layout_gravity="center"/>
                         <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">

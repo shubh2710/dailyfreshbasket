@@ -5,7 +5,7 @@
         android:id="@+id/searchBar"
         android:title="search"
         android:orderInCategory="200"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@drawable/search"
         app:showAsAction="always"/>
     <item
         android:id="@+id/mycart"

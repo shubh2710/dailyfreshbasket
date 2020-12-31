@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="org.dailyfreshbasket.com.in.fragments.ProductsTabOffers">
+    tools:context="org.dailyfreshbasket.co.in.fragments.ProductsTabOffers">
 
 
     <RelativeLayout

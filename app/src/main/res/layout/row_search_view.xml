@@ -14,6 +14,22 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="0dp"
             app:cardElevation="5dp">
+
+            <TextView
+                android:transformPivotX="100dp"
+                android:transformPivotY="100dp"
+                android:background="#44dcb3"
+                android:rotation="45"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:id="@+id/tv_product_in_search_discount"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_gravity="right"
+                android:text="30%"
+                android:textColor="#fff"
+                android:textStyle="bold" />
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -49,20 +65,23 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
                                     <ImageView
+                                        android:visibility="gone"
                                         android:layout_gravity="right|top"
-                                        android:layout_width="40dp"
-                                        android:layout_height="40dp"
-                                        app:srcCompat="@drawable/ic_maps_and_flags"/>
-                                    <TextView
-                                        android:layout_gravity="center"
-                                        android:layout_marginBottom="5dp"
-                                        android:layout_width="wrap_content"
-                                        android:textSize="10dp"
-                                        android:textColor="#fff"
-                                        android:textStyle="bold"
-                                        android:id="@+id/tv_product_in_search_discount"
-                                        android:text="66%"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        app:srcCompat="@drawable/price_tag_icon"/>
+                                    <!--<TextView-->
+                                        <!--android:rotation="45"-->
+                                        <!--android:layout_gravity="center"-->
+                                        <!--android:layout_marginBottom="0dp"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:textSize="11dp"-->
+                                        <!--android:textColor="#fff"-->
+                                        <!--android:textStyle="bold"-->
+                                        <!--android:paddingLeft="2dp"-->
+                                        <!--android:id="@+id/tv_product_in_search_discount"-->
+                                        <!--android:text="66%"-->
+                                        <!--android:layout_height="wrap_content" />-->
                                 </FrameLayout>
                             </LinearLayout>
 
@@ -105,6 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <ImageView
+                            android:visibility="gone"
                             android:layout_gravity="center"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
@@ -125,10 +145,12 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:text="90 rs"
+
                             android:textAlignment="center"
                             />
                     </LinearLayout>
                     <RatingBar
+                        android:visibility="gone"
                         android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"

@@ -3,23 +3,24 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'shubham_alias'
+            keyAlias 'key0'
             keyPassword 'dailyfreshbasket@123'
-            storeFile file('F:/DRIVE_A/keypath/dailyfreshbasket_key.jks')
+            storeFile file('F:/dfb/keystore.jks')
             storePassword 'dailyfreshbasket@123'
         }
     }
     compileSdkVersion 27
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.3'
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        applicationId "org.dailyfreshbasket.com.in"
-        minSdkVersion 19
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        applicationId "org.dailyfreshbasket.co.in"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 5
+        versionName '1.5'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         renderscriptSupportModeEnabled true
+        signingConfig signingConfigs.config
     }
     ext {
         supportLibVersion = '25.0.0'
@@ -29,11 +30,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            debuggable true
+            debuggable false
             signingConfig signingConfigs.config
         }
         debug {
             debuggable true
+            signingConfig signingConfigs.config
         }
     }
     productFlavors {
@@ -43,6 +45,7 @@ dependencies {
     implementation 'com.android.support:support-vector-drawable:27.1.1'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.google.firebase:firebase-auth:15.0.1'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -59,7 +62,6 @@ dependencies {
     implementation 'com.daimajia.slider:library:1.1.5@aar'
     implementation 'junit:junit:4.12'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
-
     implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
     implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
     implementation 'jp.wasabeef:blurry:2.1.1'
