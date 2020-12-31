@@ -1,4 +1,4 @@
-# DailFreshBasket
+# dailyfreshbasket
 
 My Internship project at Enterwebinfosoft. 
 
