@@ -4,7 +4,7 @@ My Internship project at Enterwebinfosoft.
 
 ### Contributions
 
-No one is maintaing for this repository.
+No one is maintaining for this repository.
 
 
 ### Screenshot
